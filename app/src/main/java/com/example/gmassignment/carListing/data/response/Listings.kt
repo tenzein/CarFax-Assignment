@@ -33,7 +33,7 @@ data class Listings(
     val isEnriched: Boolean,
     val listPrice: Double,
     val make: String,
-    val mileage: Int,
+    val mileage: Long,
     val model: String,
     val monthlyPaymentEstimate: MonthlyPaymentEstimate,
     val mpgCity: Int,

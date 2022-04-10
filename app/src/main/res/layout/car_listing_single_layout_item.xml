@@ -8,8 +8,8 @@
     android:layout_margin="@dimen/_8sdp"
     android:layout_marginBottom="@dimen/_8sdp"
     app:cardBackgroundColor="@android:color/white"
-    app:cardCornerRadius="@dimen/_4sdp"
-    android:elevation="@dimen/_4sdp">
+    app:cardCornerRadius="@dimen/_8sdp"
+    android:elevation="@dimen/_8sdp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -22,7 +22,6 @@
             android:id="@+id/img_car"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_150sdp"
-            android:padding="@dimen/_6sdp"
             android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -80,7 +79,7 @@
             android:id="@+id/txt_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/_8sdp"
+            android:padding="@dimen/_6sdp"
             android:textColor="@color/black"
             android:textSize="@dimen/_12sdp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -102,7 +101,7 @@
             android:id="@+id/txt_call_dealer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/_14sdp"
+            android:padding="@dimen/_12sdp"
             android:text="@string/string_call_dealer"
             android:textAlignment="center"
             android:textAllCaps="true"

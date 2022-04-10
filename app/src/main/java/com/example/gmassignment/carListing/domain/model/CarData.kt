@@ -17,7 +17,7 @@ data class CarData(
     val id: String = "",
     var dealerPhone:String? = null,
     var vin:String? = null,
-    var mileage: Int? = null,
+    var mileage: Long? = null,
     var currentPrice: Double? = null,
     var exteriorColor: String? = null,
     var interiorColor: String? = null,
