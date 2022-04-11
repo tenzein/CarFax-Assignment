@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">GMAssignment</string>
     <string name="string_call_dealer">Call Dealer</string>
+    <string name="string_fuel">Fuel</string>
+    <string name="string_engine">Engine</string>
+    <string name="string_body_style">Body Style</string>
+    <string name="string_transmission">Transmission</string>
+    <string name="string_driver_type">Driver Type</string>
+    <string name="string_interior_color">Interior Color</string>
+    <string name="string_exterior_color">Exterior Color</string>
+    <string name="string_location">Location</string>
+    <string name="string_vehicle_info">Vehicle Info</string>
 </resources>

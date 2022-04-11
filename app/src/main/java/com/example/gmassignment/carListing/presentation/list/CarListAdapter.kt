@@ -1,12 +1,16 @@
 package com.example.gmassignment.carListing.presentation.list
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.gmassignment.R
 import com.example.gmassignment.carListing.domain.model.CarData
+import com.example.gmassignment.carListing.presentation.details.CarDetailsActivity
+import com.example.gmassignment.core.ext.Util.getFormattedNumber
 import com.example.gmassignment.databinding.CarListingSingleLayoutItemBinding
 import java.text.NumberFormat
 import java.util.*
@@ -82,20 +86,19 @@ class CarListAdapter(
 
             itemBinding.txtAddress.text = carData.address
 
+            itemBinding.outerLayout.setOnClickListener {
+                val intent = Intent(mContext,CarDetailsActivity::class.java)
+                intent.putExtra("data", carData)
+                mContext.startActivity(intent)
+            }
             itemBinding.txtCallDealer.setOnClickListener {
                     onItemClickListener?.onClick(carData)
             }
 
+
         }
 
-        /**
-         * function to convert mileage to k mi
-         * */
-        private fun getFormattedNumber(count: Long): String {
-            if (count < 1000) return "" + count
-            val exp = (ln(count.toDouble()) / ln(1000.0)).toInt()
-            return String.format("%.1f %c", count / 1000.0.pow(exp.toDouble()), "kMGTPE"[exp - 1])
-        }
+
     }
 
 

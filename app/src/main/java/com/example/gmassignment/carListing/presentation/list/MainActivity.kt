@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity(), CarListAdapter.OnItemClickListener {
     }
 
     override fun onClick(value: CarData) {
-        if (value.dealerPhone?.isNotEmpty() == true) {
+        if (value.dealerPhone != "") {
             dealerPhone = value.dealerPhone!!
             checkPermission()
         } else
@@ -100,6 +100,8 @@ class MainActivity : AppCompatActivity(), CarListAdapter.OnItemClickListener {
         if (permission != PackageManager.PERMISSION_GRANTED) {
             Log.i("TAG", "Permission to record denied")
             makeRequest()
+        }else{
+            callDealerPhone(dealerPhone)
         }
     }
 
