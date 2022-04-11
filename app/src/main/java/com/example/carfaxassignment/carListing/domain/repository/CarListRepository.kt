@@ -10,9 +10,9 @@ import io.reactivex.Single
  * Email: tenzingherpaaa@gmail.com
  */
 interface CarListRepository {
- fun getCarListFromDb(): Maybe<List<CarData>?> // get list of cars from local database
- fun getCarList(): Single<ResponseCarListing> // get list of cars from remote server
- fun insertAllCarList(data: List<CarData>): Maybe<List<Long>> // insert all cars in local database
- fun deleteAllCarList(): Single<Int> // delete all cars from local database
+    fun getCarListFromDb(): Maybe<List<CarData>?> // get list of cars from local database
+    fun getCarList(): Single<ResponseCarListing> // get list of cars from remote server
+    fun insertAllCarList(data: List<CarData>): Maybe<List<Long>> // insert all cars in local database
+    fun deleteAllCarList(): Single<Int> // delete all cars from local database
 
 }
