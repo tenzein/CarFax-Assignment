@@ -11,7 +11,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.gmassignment"
+        applicationId "com.example.carfaxassignment"
         minSdk 21
         targetSdk 32
         versionCode 1

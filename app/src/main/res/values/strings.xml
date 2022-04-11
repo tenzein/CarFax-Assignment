@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GMAssignment</string>
+    <string name="app_name">CarFax Assignment</string>
     <string name="string_call_dealer">Call Dealer</string>
     <string name="string_fuel">Fuel</string>
     <string name="string_engine">Engine</string>
